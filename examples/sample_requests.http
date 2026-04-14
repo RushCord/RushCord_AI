@@ -1,0 +1,45 @@
+### Health
+GET http://127.0.0.1:8000/health
+
+### Chat
+POST http://127.0.0.1:8000/v1/chat
+X-API-Key: replace-with-your-internal-api-key
+Content-Type: application/json
+
+{
+  "messages": [
+    {"role": "system", "content": "Bạn là trợ lý hữu ích cho ứng dụng chat."},
+    {"role": "user", "content": "Giải thích tìm kiếm ngữ nghĩa trong một câu."}
+  ]
+}
+
+### Summarize
+POST http://127.0.0.1:8000/v1/summarize
+X-API-Key: replace-with-your-internal-api-key
+Content-Type: application/json
+
+{
+  "messages": [
+    {"role": "user", "content": "Chúng tôi đã thêm đăng nhập, chat và tính năng AI."},
+    {"role": "assistant", "content": "Tiếp theo là kiểm thử và triển khai."}
+  ]
+}
+
+### Embedding
+POST http://127.0.0.1:8000/v1/embedding
+X-API-Key: replace-with-your-internal-api-key
+Content-Type: application/json
+
+{
+  "text": "tìm kiếm tin nhắn này"
+}
+
+### Search
+POST http://127.0.0.1:8000/v1/search
+X-API-Key: replace-with-your-internal-api-key
+Content-Type: application/json
+
+{
+  "query": "xác thực websocket",
+  "top_k": 5
+}
