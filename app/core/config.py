@@ -18,9 +18,7 @@ class Settings(BaseSettings):
     aws_access_key_id: str | None = None
     aws_secret_access_key: str | None = None
     aws_session_token: str | None = None
-    dynamodb_users_table: str = "Users"
-    dynamodb_groups_table: str = "Groups"
-    dynamodb_messages_table: str = "Messages"
+    dynamodb_table_name: str = "ott"
 
     qdrant_url: str
     qdrant_api_key: str

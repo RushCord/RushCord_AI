@@ -1,7 +1,7 @@
 from fastapi import HTTPException
 from fastapi.concurrency import run_in_threadpool
 
-from app.clients.dynamodb_client import messages_table
+from app.clients.dynamodb_client import dynamodb_table
 from app.clients.qdrant_client import qdrant_client
 from app.core.config import get_settings
 from app.models.schemas import SearchResultItem
@@ -11,8 +11,8 @@ settings = get_settings()
 
 
 def _fetch_message(group_id: str, message_sk: str) -> dict | None:
-    key = {"PK": f"GROUP#{group_id}", "SK": message_sk}
-    result = messages_table.get_item(Key=key)
+    key = {"PK": f"CONV#{group_id}", "SK": message_sk}
+    result = dynamodb_table.get_item(Key=key)
     return result.get("Item")
 
 

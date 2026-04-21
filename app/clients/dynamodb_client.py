@@ -18,6 +18,4 @@ if settings.aws_access_key_id and settings.aws_secret_access_key:
 session = boto3.Session(region_name=settings.aws_region, **session_kwargs)
 dynamodb_resource = session.resource("dynamodb", config=boto_config)
 
-users_table = dynamodb_resource.Table(settings.dynamodb_users_table)
-groups_table = dynamodb_resource.Table(settings.dynamodb_groups_table)
-messages_table = dynamodb_resource.Table(settings.dynamodb_messages_table)
+dynamodb_table = dynamodb_resource.Table(settings.dynamodb_table_name)
