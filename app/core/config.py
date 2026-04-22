@@ -26,6 +26,7 @@ class Settings(BaseSettings):
 
     request_timeout_seconds: int = 20
     log_level: str = "INFO"
+    cors_origins: str = "http://localhost:5173,http://localhost:8081,http://localhost:3000"
 
 
 @lru_cache
