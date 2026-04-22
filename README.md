@@ -1,4 +1,4 @@
-# MeCord AI Service (FastAPI)
+# RushCord AI Service (FastAPI)
 
 Production-like but simple AI microservice for a Discord-like chat app.
 
@@ -242,8 +242,8 @@ You can also use `examples/sample_requests.http` from VS Code REST Client or Thu
 Build and run:
 
 ```bash
-docker build -t mecord-ai-service .
-docker run --env-file .env -p 8000:8000 mecord-ai-service
+docker build -t rushcord-ai-service .
+docker run --env-file .env -p 8000:8000 rushcord-ai-service
 ```
 
 ## 8) Node.js Integration Example

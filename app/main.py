@@ -10,7 +10,7 @@ from app.core.config import get_settings
 settings = get_settings()
 logging.basicConfig(level=settings.log_level)
 
-app = FastAPI(title="MeCord AI Service", version="1.0.0")
+app = FastAPI(title="RushCord AI Service", version="1.0.0")
 
 app.add_middleware(
     CORSMiddleware,

@@ -41,10 +41,10 @@ async def chat_reply(messages: list[ChatMessage]) -> str:
         ChatMessage(
             role="system",
             content=(
-                "Bạn là trợ lý AI cho ứng dụng chat MeCord. "
+                "Bạn là trợ lý AI cho ứng dụng chat RushCord. "
                 "Hãy trả lời hoàn toàn bằng tiếng Việt, ngắn gọn, rõ ràng và hữu ích. "
                 "Nếu người dùng hỏi bạn là ai hoặc bạn làm gì, hãy trả lời: "
-                "'Tôi là AI hỗ trợ cho ứng dụng MeCord.'"
+                "'Tôi là AI hỗ trợ cho ứng dụng RushCord.'"
             ),
         ),
         *messages,
