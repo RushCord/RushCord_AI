@@ -27,3 +27,4 @@ jobs:
           provenance: false
           sbom: false
           tags: duythvo/rushcord-ai:latest
+          no-cache: true
