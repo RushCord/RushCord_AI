@@ -9,8 +9,8 @@ class Settings(BaseSettings):
     service_api_key: str
 
     openai_api_key: str
-    openai_chat_model: str = "llama-3.3-70b-versatile"
-    openai_summary_model: str = "llama-3.3-70b-versatile"
+    openai_chat_model: str = "gpt-4o-mini"
+    openai_summary_model: str = "gpt-4o-mini"
     openai_embedding_model: str = "text-embedding-3-small"
     openai_whisper_model: str = "whisper-1"
 
